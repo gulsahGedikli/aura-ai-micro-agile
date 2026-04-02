@@ -32,6 +32,22 @@ In an era where AI can produce code in seconds, traditional 2-week sprints have 
 3. **Generate:** Run the Pulse using your preferred AI tool (Cursor, Claude, Copilot, etc.).
 4. **Sift:** Review the output, prune the unnecessary, and merge into the main branch.
 ---
+AURA Lifecycle (4-24 Hours)
+-----------------------------------
+
+[ 1. CONTEXT INJECTION ]  -->  The Architect defines goals & constraints.
+           |
+           v
+[ 2. AGENT GENERATION  ]  -->  AI Agent produces raw code & logic.
+           |
+           v
+[ 3. THE SIFT (REVIEW) ]  -->  Architect prunes "AI Bloat" & redundant code.
+           |
+           v
+[ 4. UNIT INTEGRATION  ]  -->  Clean, validated code is merged to main.
+
+-----------------------------------
+      (Repeat every Pulse)
 
 ## License & Intellectual Property
 This framework is licensed under the **MIT License**. 

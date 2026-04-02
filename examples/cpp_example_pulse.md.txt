@@ -1,0 +1,26 @@
+# Example: High-Performance File Archiver (Mmap)
+ID: P-105 | Status: Merged | Unit Duration: 2 Hours
+
+1. Context Injection (The Input)
+Architect's Brief: "Develop a high-performance file reading utility using std::filesystem and POSIX mmap for local camera data archive. The system must map a 2GB log file into memory for read-only access. Ensure the mapping is private to the process. Target file: /data/camera_raw.log."
+
+2. Validation Criteria (The Contract)
+[x] Safety: Use RAII for file descriptor management to prevent resource leaks.
+
+[x] Performance: Mapping must use PROT_READ and MAP_PRIVATE.
+
+[x] Standard: Use C++20 features (specifically std::span for safe memory access).
+
+[x] Error Handling: Must throw a custom ArchiveException if mmap fails or file is missing.
+
+3. Agent Generation (The AI Output)
+AI Summary: Created ArchiveMapper class. Implemented mmap and munmap logic. Included a helper function to calculate file size using std::filesystem::file_size.
+
+4. The Sift (Architect’s Review)
+Observation: The AI Agent attempted to include boost::interprocess for convenience, which violates the "Unit" constraint of using standard/system calls only to minimize binary size.
+
+AI Bloat: AI added an unnecessary std::vector<char> to buffer the data after mapping it, which completely defeats the purpose of zero-copy mmap.
+
+Action: Redundant buffer and Boost dependency pruned.
+
+Note: "Simplified the class to use a raw pointer wrapped in std::span. Corrected the munmap call to use the correct file size. Logic is now zero-copy as intended."

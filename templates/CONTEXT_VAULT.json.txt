@@ -1,0 +1,8 @@
+{
+  "project_name": "Project Name",
+  "architecture_style": "Monolithic / Microservice",
+  "tech_stack": ["C++20", "mmap", "glog"],
+  "naming_conventions": "Snake_case for variables, PascalCase for classes",
+  "prohibited_libraries": ["boost (use std instead)"],
+  "description": "Update this so the AI ​​can understand the project's general guidelines."
+}

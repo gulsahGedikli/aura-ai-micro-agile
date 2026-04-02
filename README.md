@@ -1,4 +1,4 @@
-# AURA-Aİ-MICRO-AGILE 
+# AURA-AI-MICRO-AGILE 
 > **A Pioneer Software Engineering Methodology for the AI Era**
 
 ---

@@ -28,6 +28,11 @@ In an era where AI can produce code in seconds, traditional 2-week sprints have 
 | **Agent (AI)** | Rapid Code Generation, Unit Testing, Documentation |
 | **Validator (Hybrid)** | Quality Gate, Security Check, and Logic Approval |
 
+## Repository Structure
+- `/templates`: Standardized files for AI-Human communication.
+- `/examples`: Real-world scenarios
+- `/workflow`: Automation scripts for Pulse cycles.
+- 
 ## Quick Start
 1. **Prepare:** Copy the `templates/PULSE_TEMPLATE.md` file.
 2. **Inject:** Define your **Objective** and **Validation Criteria** for the AI Agent.

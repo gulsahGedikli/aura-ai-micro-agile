@@ -34,20 +34,16 @@ In an era where AI can produce code in seconds, traditional 2-week sprints have 
 ---
 AURA Lifecycle (4-24 Hours)
 -----------------------------------
+```md
+```mermaid
+flowchart TD
+    A[1. Context Injection<br/>Architect sets goals and constraints]
+    B[2. Agent Generation<br/>AI generates raw code and logic]
+    C[3. The Sift<br/>Architect removes unnecessary complexity and redundant logic]
+    D[4. Unit Integration<br/>Validated code is merged into main]
+    E([Repeat every Pulse])
 
-[ 1. CONTEXT INJECTION ]  -->  The Architect defines goals & constraints.
-           |
-           v
-[ 2. AGENT GENERATION  ]  -->  AI Agent produces raw code & logic.
-           |
-           v
-[ 3. THE SIFT (REVIEW) ]  -->  Architect prunes "AI Bloat" & redundant code.
-           |
-           v
-[ 4. UNIT INTEGRATION  ]  -->  Clean, validated code is merged to main.
-
------------------------------------
-      (Repeat every Pulse)
+    A --> B --> C --> D --> E
 
 ## License & Intellectual Property
 This framework is licensed under the **MIT License**. 

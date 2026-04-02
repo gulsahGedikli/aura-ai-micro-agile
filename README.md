@@ -3,13 +3,6 @@
 
 ---
 
-## License & Intellectual Property
-This framework is licensed under the **MIT License**. 
-
-**Academic & Research Note:** This methodology is currently being developed into a formal academic paper. If you implement, adapt, or reference **AURA** in professional projects or research, please provide formal attribution to the author.
-
----
-
 ## Overview
 **AURA-Aİ-MICRO-AGILE** is an ultra-lightweight, "back-to-basics" framework designed to synchronize human architectural oversight with the exponential generation speed of AI. 
 
@@ -32,12 +25,18 @@ In an era where AI can produce code in seconds, traditional 2-week sprints have 
 - `/templates`: Standardized files for AI-Human communication.
 - `/examples`: Real-world scenarios
 - `/workflow`: Automation scripts for Pulse cycles.
-- 
+  
 ## Quick Start
 1. **Prepare:** Copy the `templates/PULSE_TEMPLATE.md` file.
 2. **Inject:** Define your **Objective** and **Validation Criteria** for the AI Agent.
 3. **Generate:** Run the Pulse using your preferred AI tool (Cursor, Claude, Copilot, etc.).
 4. **Sift:** Review the output, prune the unnecessary, and merge into the main branch.
+---
+
+## License & Intellectual Property
+This framework is licensed under the **MIT License**. 
+
+**Academic & Research Note:** This methodology is currently being developed into a formal academic paper. If you implement, adapt, or reference **AURA** in professional projects or research, please provide formal attribution to the author.
 
 ---
 *Created by gulsah.gedikli - 2026*

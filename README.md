@@ -34,7 +34,6 @@ In an era where AI can produce code in seconds, traditional 2-week sprints have 
 ---
 AURA Lifecycle (4-24 Hours)
 -----------------------------------
-```md
 ```mermaid
 flowchart TD
     A[1. Context Injection<br/>Architect sets goals and constraints]
@@ -44,7 +43,7 @@ flowchart TD
     E([Repeat every Pulse])
 
     A --> B --> C --> D --> E
-
+```
 ## License & Intellectual Property
 This framework is licensed under the **MIT License**. 
 
